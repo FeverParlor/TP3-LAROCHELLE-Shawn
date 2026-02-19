@@ -4,14 +4,60 @@
 /* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
 ========================================================================== */
 
-body{
-	background-color: aliceblue;
+body {
+	background: #F6EFE2;            /* warm beige */
+  	color: #2B1D14;                 /* espresso */
+  	font-family: "Nunito", Arial, sans-serif;
+}
+
+nav a {
+	text-decoration: none;
+	color: #b66a00;
+	padding: 10px 12px;
+	border-radius: 12px;
+  	font-weight: 800;
+}
+
+nav a:hover {
+	background: #f0E3CF;
+}
+
+.nav-commande {
+  	background: #C89B3C;                 /* honey gold */
+  	color: #2B1D14;                      /* espresso */
+  	border: 2px solid #8B5A2B;           /* warm brown border */
+  	padding: 10px 18px;
+  	border-radius: 999px;                /* pill */
+  	font-weight: 900;
+  	box-shadow: 0 3px 0 #7a4e2f;
+	transition: all 0.2s ease;
+}
+
+.nav-commande:hover {
+	transform: translateY(2px);
+  	box-shadow: 0 1px 0 #6B3F1F;
+  	background: #D8B35A;    
+}
+
+.baloo-2-TITRES {
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.nunito-CORPS {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Mise en page (positionnement)
 ========================================================================== */
 
-.container{
+.container {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -21,7 +67,59 @@ body{
 /* Header / Navigations / Footer 
 ========================================================================== */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+	background-image: url(/images/tileable-wood-colored.png);
+	background-color: #5A3E2B;
+	background-blend-mode: multiply;
+  	border-bottom: 2px solid #a37f30;
+}
 
+nav ul {
+    display: flex;
+    gap: 20px;
+	list-style: none;
+}
+
+.mobile-menu-btn{
+  	display: none;
+  	background: rgba(255, 248, 238, 0.12);
+  	border: 2px solid #E4D3BE;
+  	border-radius: 12px;
+  	padding: 10px 12px;
+  	cursor: pointer;
+	background-color:#6B3F1F;
+}
+
+.menu-icon {
+	width: 26px;
+  	height: 26px;
+  	display: block;
+	filter: invert(1);
+}
+
+.main-footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 40px;
+	background: #FFF8EE;
+	border-top: 3px solid #C89B3C;
+	font-family: "Nunito", Arial, sans-serif;
+	font-weight: 700;
+	color: #2B1D14;
+}
+
+.footer-left {
+  	color: #6E5646;
+}
+
+.footer-right {
+  	font-weight: 800;
+}
 
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
@@ -35,3 +133,33 @@ body{
 
 /* Règles spécifiques aux pages
 ========================================================================== */
+
+
+
+/*====MEDIA QUERIES=======*/
+
+@media (min-width: 1200px) {
+  .logo-img {
+    width: 200px;
+  }
+  .mobile-menu-btn {
+	display: none;
+  }
+}
+
+@media (max-width: 960px){
+	nav { 
+		display: none;
+	}
+	
+	.mobile-menu-btn {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.main-footer {
+    	padding: 14px 20px;
+    	font-size: 14px;
+  }
+}
