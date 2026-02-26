@@ -29,13 +29,139 @@
   </button>
 </header>
 
-  <body>
-    <main>
-        
-    </main>
-  </body>
+<body>
+  <main>
+   <div class="container">
+      <section class="reservation">
+        <h2 class="reservation-title">Réservation</h2>
+        <p class="reservation-desc">Réservez votre table chez Pookie’s. Tous les champs marqués * sont obligatoires.</p>
+
+        <form class="reservation-form" action="P1.5-Confirmation.html" method="get">
+          <!-- Identity -->
+          <fieldset class="form-group">
+            <legend>Informations du client</legend>
+
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" required autocomplete="given-name">
+              </div>
+
+              <div class="form-row">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" required autocomplete="family-name">
+              </div>
+
+              <div class="form-row">
+                <label for="telephone">Téléphone *</label>
+                <input type="tel" id="telephone" name="telephone" required
+                       autocomplete="tel"
+                       placeholder="Ex : 819-555-1234">
+              </div>
+
+              <div class="form-row">
+                <label for="courriel">Courriel (facultatif)</label>
+                <input type="email" id="courriel" name="courriel" autocomplete="email"
+                       placeholder="Ex : pookie@exemple.com">
+              </div>
+            </div>
+
+            <div class="form-row checkbox-row">
+              <input type="checkbox" id="infolettre" name="infolettre">
+              <label for="infolettre">Je veux m’inscrire à l’infolettre (facultatif)</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>Détails de la réservation</legend>
+
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="personnes">Nombre de personnes *</label>
+                <select id="personnes" name="personnes" required>
+                  <option value="">Choisir...</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7</option><option>8</option>
+                  <option>9</option><option>10</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="date">Date *</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+
+              <div class="form-row">
+                <label for="heure">Heure *</label>
+                <select id="heure" name="heure" required>
+                  <option value="">Choisir...</option>
+                  <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option>
+                  <option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option>
+                  <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option>
+                  <option>21:00</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <span class="label-like">Emplacement *</span>
+                <div class="radio-row">
+                  <label>
+                    <input type="radio" name="emplacement" value="Salle à manger" required>
+                    Salle à manger
+                  </label>
+
+                  <label>
+                    <input type="radio" name="emplacement" value="Terrasse" required>
+                    Terrasse
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row form-commentaire">
+              <label for="commentaire">Commentaire (facultatif)</label>
+              <textarea id="commentaire" name="commentaire" rows="4"
+                        placeholder="Allergies, occasion spéciale, préférence de table, etc."></textarea>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">
+              <span class="btn-plus">+</span> Confirmer la réservation
+            </button>
+
+            <button class="btn btn-secondary" type="reset">
+              <span class="btn-plus">+</span> Effacer
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>     
+  </main>
   <footer class="main-footer">
-    <div class="footer-left">AEC en Développement Web</div>
-    <div class="footer-right">Shawn Larochelle</div>
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-madeby">
+        <span class="footer-mail">✉️</span>
+        <span>Réalisé par : Shawn Larochelle</span>
+      </div>
+
+      <div class="footer-social">
+        <span>Réseaux sociaux :</span>
+        <a href="#" alt="Facebook">ⓕ</a>
+        <a href="#" alt="LinkedIn">in</a>
+        <a href="#" alt="Twitter">𝕏</a>
+        <a href="#" alt="Instagram">◎</a>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <div>Intégration web 1</div>
+      <div>Cégep de Trois-Rivières (Hiver 2026)</div>
+    </div>
+  </div>
   </footer>
+</body>
 </html>
