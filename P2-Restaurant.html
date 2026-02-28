@@ -10,53 +10,105 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   </head>
+<body>
+  <!-- HEADER -->
   <header>
     <div class="logo">
-        <img src="" alt="Pookie's">
+      <img src="" alt="Pookie's">
     </div>
 
-  <nav>
-    <ul class="nav-list">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="P1-Réservation.html">Réservation</a></li>
-      <li><a href="P2-Restaurant.html" class="active">Restaurant</a></li>
-      <li><a href="P3-Ma Commande.html" class="nav-commande">Ma Commande</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="P1-Réservation.html">Réservation</a></li>
+        <li><a href="P2-Restaurant.html" class="active">Restaurant</a></li>
+        <li><a href="P3-Ma Commande.html" class="nav-commande">Ma Commande</a></li>
+      </ul>
+    </nav>
 
-  <button class="mobile-menu-btn" type="button">
-    <img src="images/menu.png" alt="menu" class="menu-icon">
-  </button>
-</header>
+    <button class="mobile-menu-btn" type="button" aria-label="Ouvrir le menu">
+      <img src="images/menu.png" alt="" class="menu-icon">
+    </button>
+  </header>
 
-<body>
   <main>
-        
+    <div class="container">
+      <section class="restaurant-page">
+        <h2 class="restaurant-title">Restaurant</h2>
+
+        <div class="mosaic">
+          <figure class="tile tile-a">
+            <img src="images/pexels-rdne-6173824.jpg" alt="Ambiance du restaurant">
+          </figure>
+
+          <figure class="tile tile-b">
+            <img src="images/pexels-rdne-6646268.jpg" alt="Plat signature de Pookie’s">
+          </figure>
+
+          <figure class="tile tile-c">
+            <img src="images/pexels-roman-odintsov-4551154.jpg" alt="Salle à manger">
+          </figure>
+
+          <figure class="tile tile-d">
+            <img src="images/pexels-rachel-claire-5490999.jpg" alt="Terrasse ou espace détente">
+          </figure>
+
+          <figure class="tile tile-e">
+            <img src="images/pexels-pressmaster-3851834.jpg" alt="Détail gourmand">
+          </figure>
+
+          <figure class="tile tile-f">
+            <img src="images/pexels-vedanti-66315-250465.jpg" alt="Boisson">
+          </figure>
+        </div>
+
+        <!-- Contact + Map -->
+        <section class="contact-map">
+          <div class="contact-info">
+            <h3>Adresse</h3>
+            <p>102 rue Queen</p>
+            <p>Sherbrooke, QC J1M 1J6</p>
+
+            <h3>Téléphone</h3>
+            <p>(819) 911-9111</p>
+
+            <h3>Courriel</h3>
+            <p><a href="mailto:restopookie@gmail.com">restopookie@gmail.com</a></p>
+          </div>
+
+          <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.779804831003!2d-71.8565355785781!3d45.36658923968599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb65299ccb29821%3A0x25dc242afd6b9491!2sHope%20Community%20Church!5e0!3m2!1sfr!2sca!4v1772307997378!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+      </section>
+    </div>
   </main>
+
+  <!-- FOOTER -->
   <footer class="main-footer">
-  <div class="container footer-inner">
-    <div class="footer-top">
-      <div class="footer-madeby">
-        <span class="footer-mail">✉️</span>
-        <span>Réalisé par : Shawn Larochelle</span>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-madeby">
+          <span class="footer-mail">✉️</span>
+          <span>Réalisé par : Shawn Larochelle</span>
+        </div>
+
+        <div class="footer-social">
+          <span>Réseaux sociaux :</span>
+          <a href="#" aria-label="Facebook">ⓕ</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">◎</a>
+        </div>
       </div>
 
-      <div class="footer-social">
-        <span>Réseaux sociaux :</span>
-        <a href="#" alt="Facebook">ⓕ</a>
-        <a href="#" alt="LinkedIn">in</a>
-        <a href="#" alt="Twitter">𝕏</a>
-        <a href="#" alt="Instagram">◎</a>
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div>Intégration web 1</div>
+        <div>Cégep de Trois-Rivières (Hiver 2026)</div>
       </div>
     </div>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-bottom">
-      <div>Intégration web 1</div>
-      <div>Cégep de Trois-Rivières (Hiver 2026)</div>
-    </div>
-  </div>
   </footer>
 </body>
 </html>
