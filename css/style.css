@@ -5,8 +5,8 @@
 ========================================================================== */
 
 body {
-	background: #F6EFE2;            /* warm beige */
-  	color: #2B1D14;                 /* espresso */
+	  background: #F6EFE2;
+  	color: #2B1D14;
   	font-family: "Nunito", Arial, sans-serif;
 }
 
@@ -16,32 +16,6 @@ nav a {
 	padding: 10px 12px;
 	border-radius: 12px;
   	font-weight: 800;
-}
-
-nav a:hover {
-	background: #f0E3CF;
-}
-
-nav a.active {
-  background: rgba(255,255,255,0.18);
-  border: 2px solid #C89B3C;
-}
-
-.nav-commande {
-  	background: #C89B3C;                 /* honey gold */
-  	color: #2B1D14;                      /* espresso */
-  	border: 2px solid #8B5A2B;           /* warm brown border */
-  	padding: 10px 18px;
-  	border-radius: 999px;                /* pill */
-  	font-weight: 900;
-  	box-shadow: 0 3px 0 #7a4e2f;
-	transition: all 0.2s ease;
-}
-
-.nav-commande:hover {
-	transform: translateY(2px);
-  	box-shadow: 0 1px 0 #6B3F1F;
-  	background: #D8B35A;    
 }
 
 .baloo-2-TITRES {
@@ -384,7 +358,6 @@ main{
 
 /*===========P2-Restaurant===========*/
 
-/* ===== Restaurant page ===== */
 .restaurant-page{
   padding: 45px 0 70px;
 }
@@ -395,14 +368,12 @@ main{
   margin-bottom: 22px;
 }
 
-/* Mosaic grid */
 .mosaic{
   display: grid;
   gap: 18px;
   margin-bottom: 50px;
 }
 
-/* tile base */
 .tile{
   margin: 0;
   border: 3px solid #2B1D14;
@@ -448,13 +419,15 @@ main{
 /* ===== P3: MA COMMANDE ===== */
 
 .commande-page{
-  padding: 45px 0 70px;
+  padding: 45px 0 80px;
 }
 
 .commande-title{
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 48px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+  color: #2B1D14;
+  line-height: 1;
 }
 
 .commande-layout{
@@ -469,39 +442,52 @@ main{
 }
 
 .commande-section{
-  margin-bottom: 55px;
+  margin-bottom: 58px;
 }
 
 .commande-section-title{
   font-family: "Baloo 2", system-ui, sans-serif;
-  font-size: 28px;
-  margin-bottom: 12px;
+  font-size: 30px;
+  margin-bottom: 14px;
+  color: #3B271B;
+  line-height: 1.1;
 }
 
 .commande-table{
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 8px;
-}
-
-.commande-table{
-  width:100%;
-  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff9f0;
+  box-shadow: 0 8px 20px #2b1d1414;
 }
 
 .commande-table thead th{
-  background:#FFF8EE;
-  padding:14px 16px;
+  background: #e1d1b7;
+  padding:16px 18px;
   font-weight:900;
+  font-size: 16px;
+  border-bottom: 1px solid #E6D7BF;
 }
 
 .commande-table tbody td{
-  padding:14px 16px;
-  font-weight:700;
+  padding: 16px 18px;
+  font-weight: 700;
+  color: #2B1D14;
+  border-bottom: 1px solid #F0E6D7;
 }
 
 .commande-table tbody tr:nth-child(odd){
-  background:rgba(255,248,238,0.55);
+  background: #fff9f0;
+}
+
+.commande-table tbody tr:nth-child(even){
+  background:#fff5e8;
+}
+
+.commande-table tbody tr:last-child td{
+  border-bottom: none;
 }
 
 .commande-table th:nth-child(2),
@@ -509,19 +495,31 @@ main{
 .commande-table td:nth-child(2),
 .commande-table td:nth-child(3){
   text-align:center;
+  width: 140px;
+}
+
+.commande-table tbody tr:hover{
+  background: #F8EEDC;
+  transition: background 0.2s ease;
 }
 
 .commande-details{
-  flex: 0 0 300px;
-  background: #EAE0D0;
-  padding: 26px;
-  border-radius: 0;
+  flex: 0 0 310px;
+  background: linear-gradient(180deg, #F3E8D6 0%. #EADBC4 100%);
+  padding: 28px 26px;
+  border-radius: 20px;
+  border: 1px solid #D9C5A8;
+  box-shadow: 0 10px 24px #2B1D14;
+  position: sticky;
+  top: 20px;
 }
 
 .details-title{
   font-family: "Baloo 2", system-ui, sans-serif;
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 34px;
+  margin-bottom: 22px;
+  color: #2B1D14;
+  line-height: 1;
 }
 
 .details-line{
@@ -532,34 +530,37 @@ main{
   margin-bottom: 18px;
   font-size: 18px;
   font-weight: 800;
+  color: #2B1D14;
 }
 
 .details-divider{
   height: 1px;
-  background: #2B1D14;
+  background: #8B725B;
   opacity: 0.5;
   margin: 10px 0 16px;
 }
 
 .details-total{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 900;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .details-button{
   display: inline-block;
-  background: #000;
+  background: #2B1D14;
   color: #FFF8EE;
   text-decoration: none;
-  font-weight: 800;
-  padding: 12px 28px;
-  transition: background 0.2s ease, transform 0.2s ease;
+  font-weight: 900;
+  padding: 12px 26px;
+  transition: background 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 .details-button:hover{
-  background: #2B1D14;
-  transform: translateY(-1px);
+  background: #3B271B;
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #6B3F1F;
+
 }
 
 .active-commande{
@@ -575,16 +576,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-	background-image: url(/images/tileable-wood-colored.png);
-	background-color: #5A3E2B;
-	background-blend-mode: multiply;
+	  background-image: url(/images/tileable-wood-colored.png);
+	  background-color: #5A3E2B;
+	  background-blend-mode: multiply;
   	border-bottom: 2px solid #a37f30;
 }
 
 nav ul {
     display: flex;
     gap: 20px;
-	list-style: none;
+	  list-style: none;
 }
 
 .mobile-menu-btn{
@@ -615,6 +616,37 @@ nav ul {
 	  color: #2B1D14;
 }
 
+nav a:hover {
+	background: #f0E3CF;
+}
+
+nav a:active {
+  background: rgba(255,255,255,0.18);
+  border: 2px solid #C89B3C;
+}
+
+.nav-commande {
+  	background: #C89B3C;
+  	color: #2B1D14;
+  	border: 2px solid #8B5A2B;
+  	padding: 10px 18px;
+  	border-radius: 999px;
+  	font-weight: 900;
+  	box-shadow: 0 3px 0 #7a4e2f;
+	  transition: all 0.2s ease;
+}
+
+.nav-commande:hover {
+	  transform: translateY(2px);
+  	box-shadow: 0 1px 0 #6B3F1F;
+  	background: #D8B35A;    
+}
+
+.nav-commande.active {
+    transform: translateY(3px);
+    box-shadow: none;
+    background: #B88F3E;
+}
 
 .footer-inner{
     display: flex;
@@ -732,6 +764,18 @@ nav ul {
   .map-box iframe{
     min-height: 340px;
   }
+
+  .commande-title{
+    font-size: 42px;
+  }
+  
+  .commande-layout{
+    gap: 35px;
+  }
+
+  .commande-details{
+    flex: 0 0 290px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -775,22 +819,11 @@ nav ul {
   .map-box iframe{
     min-height: 360px;
   }
-
-  .commande-title{
-    font-size: 42px;
-  }
-
-  .commande-layout{
-    gap: 35px;
-  }
-
-  .commande-details{
-    flex: 0 0 280px;
-  }
 }
 
 @media (max-width: 960px){
-	nav { 
+	
+  nav { 
 		display: none;
 	}
 	
@@ -892,6 +925,7 @@ nav ul {
   .commande-details{
     flex: initial;
     max-width: none;
+    position: static;
   }
 }
 
@@ -919,18 +953,24 @@ nav ul {
 
   .commande-title{
     font-size: 36px;
-  }
-
-  .commande-head,
-  .commande-row{
-    grid-template-columns: 1.6fr 1fr 0.8fr;
-    gap: 10px;
-    padding: 12px;
-    font-size: 14px;
+    margin-bottom: 30px;
   }
 
   .commande-section-title{
-    font-size: 24px;
+    font-size: 25px;
+  }
+
+  .commande-table thead th,
+  .commande-table tbody td{
+    padding: 13px 12px;
+    font-size: 14px;
+  }
+
+  .commande-table th:nth-child(2),
+  .commande-table th:nth-child(3),
+  .commande-table td:nth-child(2),
+  .commande-table td:nth-child(3){
+    width: auto;
   }
 
   .details-title{
