@@ -1,22 +1,23 @@
-*{ box-sizing: border-box;}
-
+* {
+  box-sizing: border-box;
+}
 
 /* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
 ========================================================================== */
 
 body {
-	  background: #F6EFE2;
-  	color: #2B1D14;
-  	font-family: "Nunito", Arial, sans-serif;
+  background: #f6efe2;
+  color: #2b1d14;
+  font-family: "Nunito", Arial, sans-serif;
 }
 
 nav a {
-    position: relative;
-	  text-decoration: none;
-	  color: #FFF8EE;
-	  padding: 10px 12px;
-  	font-weight: 800;
-    display: inline-block
+  position: relative;
+  text-decoration: none;
+  color: #fff8ee;
+  padding: 10px 12px;
+  font-weight: 800;
+  display: inline-block;
 }
 
 .baloo-2-TITRES {
@@ -25,7 +26,6 @@ nav a {
   font-weight: 600;
   font-style: normal;
 }
-
 
 .nunito-CORPS {
   font-family: "Nunito", sans-serif;
@@ -37,25 +37,26 @@ nav a {
 /* Mise en page (positionnement)
 ========================================================================== */
 
-html, body{
+html,
+body {
   height: 100%;
 }
 
-body{
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-main{
+main {
   flex: 1;
 }
 
 .container {
-	width: 90%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /*==========INDEX (ACCUEIL)============*/
@@ -68,51 +69,51 @@ main{
   padding: 60px 0;
 }
 
-.accueil-left{
+.accueil-left {
   flex: 1;
   max-width: 400px;
 }
 
-.accueil-right{
+.accueil-right {
   flex: 1.4;
   display: flex;
   justify-content: flex-end;
 }
 
-.accueil-title{
+.accueil-title {
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 48px;
   margin-bottom: 10px;
 }
 
-.accueil-desc{
-  color: #6E5646;
+.accueil-desc {
+  color: #6e5646;
   font-weight: 700;
   margin-bottom: 18px;
 }
 
-.accueil-image{
+.accueil-image {
   width: 100%;
   max-width: 650px;
   height: 360px;
-  border: 3px solid #C89B3C;
+  border: 3px solid #c89b3c;
   border-radius: 10px;
 }
 
-.accueil-image img{
+.accueil-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 7px;
 }
 
-.accueil-btns{
+.accueil-btns {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
 }
 
-.btn{
+.btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -120,11 +121,14 @@ main{
   font-weight: 900;
   border-radius: 999px;
   padding: 12px 18px;
-  border: 2px solid #2B1D14;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  border: 2px solid #2b1d14;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
 }
 
-.btn-plus{
+.btn-plus {
   font-weight: 900;
   display: inline-flex;
   align-items: center;
@@ -137,110 +141,110 @@ main{
   line-height: 1;
 }
 
-.btn-primary{
-  background: #2B1D14;
-  color: #FFF8EE;
-  box-shadow: 0 3px 0 #6B3F1F;
+.btn-primary {
+  background: #2b1d14;
+  color: #fff8ee;
+  box-shadow: 0 3px 0 #6b3f1f;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   transform: translateY(2px);
-  box-shadow: 0 1px 0 #6B3F1F;
+  box-shadow: 0 1px 0 #6b3f1f;
 }
 
-.btn-secondary{
-  background: #FFF8EE;
-  color: #2B1D14;
-  border-color: #C89B3C;
-  box-shadow: 0 3px 0 #A66A3A;
+.btn-secondary {
+  background: #fff8ee;
+  color: #2b1d14;
+  border-color: #c89b3c;
+  box-shadow: 0 3px 0 #a66a3a;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
   transform: translateY(2px);
-  box-shadow: 0 1px 0 #A66A3A;
-  background: #F0E3CF;
+  box-shadow: 0 1px 0 #a66a3a;
+  background: #f0e3cf;
 }
 
-.testimonials{
+.testimonials {
   padding: 20px 0 70px;
 }
 
-.section-title{
+.section-title {
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 34px;
   margin-bottom: 6px;
 }
 
-.section-subtitle{
-  color: #6E5646;
+.section-subtitle {
+  color: #6e5646;
   font-weight: 700;
   margin-bottom: 22px;
   font-family: "Nunito", sans-serif;
 }
 
-.testimonials-grid{
+.testimonials-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
 }
 
-.testimonial-card{
+.testimonial-card {
   flex: 1 1 calc(33.333% - 12px);
-  background: #FFF8EE;
-  border: 1px solid #E4D3BE;
+  background: #fff8ee;
+  border: 1px solid #e4d3be;
   border-radius: 12px;
   padding: 16px;
 }
 
-.testimonial-head{
+.testimonial-head {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
 }
 
-.avatar{
+.avatar {
   width: 34px;
   height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #F0E3CF;
+  background: #f0e3cf;
 }
 
-.testimonial-name{
+.testimonial-name {
   font-size: 14px;
   font-weight: 900;
 }
 
-.testimonial-text{
-  color: #2B1D14;
+.testimonial-text {
+  color: #2b1d14;
   font-weight: 600;
   line-height: 1.4;
-  font-family:"Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 /* ===== P1-Réservation ===== */
-.reservation{
+.reservation {
   padding: 50px 0 70px;
 }
 
-.reservation-title{
+.reservation-title {
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 36px;
   margin-bottom: 6px;
 }
 
-.reservation-desc{
-  color: #6E5646;
+.reservation-desc {
+  color: #6e5646;
   font-weight: 700;
   margin-bottom: 18px;
 }
 
-.reservation-form{
-  background: #FFF8EE;
-  border: 1px solid #E4D3BE;
+.reservation-form {
+  background: #fff8ee;
+  border: 1px solid #e4d3be;
   border-radius: 12px;
   padding: 18px;
   display: flex;
@@ -248,26 +252,26 @@ main{
   gap: 16px;
 }
 
-.form-group{
-  border: 1px solid #E4D3BE;
+.form-group {
+  border: 1px solid #e4d3be;
   border-radius: 12px;
   padding: 14px;
 }
 
-.form-group legend{
+.form-group legend {
   padding: 0 8px;
   font-weight: 900;
-  color: #2B1D14;
+  color: #2b1d14;
 }
 
-.form-grid{
+.form-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 10px;
 }
 
-.form-row{
+.form-row {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -275,59 +279,59 @@ main{
 }
 
 .form-row label,
-.label-like{
+.label-like {
   font-weight: 900;
-  color: #2B1D14;
+  color: #2b1d14;
 }
 
 .form-row input,
 .form-row select,
-.form-row textarea{
+.form-row textarea {
   font-family: "Nunito", Arial, sans-serif;
   padding: 10px 12px;
   border-radius: 10px;
-  border: 2px solid #E4D3BE;
-  background: #FFFFFF;
-  color: #2B1D14;
+  border: 2px solid #e4d3be;
+  background: #ffffff;
+  color: #2b1d14;
 }
 
 .form-row input:focus,
 .form-row select:focus,
-.form-row textarea:focus{
+.form-row textarea:focus {
   outline: none;
-  border-color: #C89B3C;
+  border-color: #c89b3c;
 }
 
-.form-commentaire{
+.form-commentaire {
   margin-top: 10px;
 }
 
-.radio-row{
+.radio-row {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
   padding: 10px 0 0;
 }
 
-.radio-row label{
+.radio-row label {
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 800;
 }
 
-.checkbox-row{
+.checkbox-row {
   flex-direction: row;
   align-items: center;
   gap: 10px;
   margin-top: 12px;
 }
 
-.checkbox-row label{
+.checkbox-row label {
   font-weight: 800;
 }
 
-.form-actions{
+.form-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
@@ -335,23 +339,23 @@ main{
 }
 
 /* ===== P1.5-Confirmation ===== */
-.confirmation{
+.confirmation {
   padding: 60px 0 80px;
 }
 
-.confirmation-title{
+.confirmation-title {
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 36px;
   margin-bottom: 10px;
 }
 
-.confirmation-text{
-  color: #6E5646;
+.confirmation-text {
+  color: #6e5646;
   font-weight: 700;
   margin-bottom: 18px;
 }
 
-.confirmation-actions{
+.confirmation-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
@@ -359,38 +363,38 @@ main{
 
 /*===========P2-Restaurant===========*/
 
-.restaurant-page{
+.restaurant-page {
   padding: 45px 0 70px;
 }
 
-.restaurant-title{
+.restaurant-title {
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 42px;
   margin-bottom: 22px;
 }
 
-.mosaic{
+.mosaic {
   display: grid;
   gap: 18px;
   margin-bottom: 50px;
 }
 
-.tile{
+.tile {
   margin: 0;
-  border: 3px solid #2B1D14;
+  border: 3px solid #2b1d14;
   border-radius: 10px;
   overflow: hidden;
-  background: #EEE;
+  background: #eee;
 }
 
-.tile img{
+.tile img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
 
-.contact-map{
+.contact-map {
   display: flex;
   gap: 30px;
   align-items: flex-start;
@@ -398,18 +402,18 @@ main{
   margin-top: 30px;
 }
 
-.contact-info{
+.contact-info {
   flex: 0 0 280px;
 }
 
-.map-box{
+.map-box {
   flex: 1;
   border-radius: 10px;
   overflow: hidden;
-  border: 3px solid #2B1D14;
+  border: 3px solid #2b1d14;
 }
 
-.map-box iframe{
+.map-box iframe {
   width: 100%;
   height: 100%;
   min-height: 360px;
@@ -419,42 +423,42 @@ main{
 
 /* ===== P3: MA COMMANDE ===== */
 
-.commande-page{
+.commande-page {
   padding: 45px 0 80px;
 }
 
-.commande-title{
+.commande-title {
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 48px;
   margin-bottom: 42px;
-  color: #2B1D14;
+  color: #2b1d14;
   line-height: 1;
 }
 
-.commande-layout{
+.commande-layout {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 50px;
 }
 
-.commande-menu{
+.commande-menu {
   flex: 1;
 }
 
-.commande-section{
+.commande-section {
   margin-bottom: 58px;
 }
 
-.commande-section-title{
+.commande-section-title {
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 30px;
   margin-bottom: 14px;
-  color: #3B271B;
+  color: #3b271b;
   line-height: 1.1;
 }
 
-.commande-table{
+.commande-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -464,67 +468,67 @@ main{
   box-shadow: 0 8px 20px #2b1d1414;
 }
 
-.commande-table thead th{
-  background: #6E5646;
-  padding:16px 18px;
-  font-weight:900;
+.commande-table thead th {
+  background: #6e5646;
+  padding: 16px 18px;
+  font-weight: 900;
   font-size: 16px;
-  border-bottom: 1px solid #E6D7BF;
-  color: #F6EFE2;
+  border-bottom: 1px solid #e6d7bf;
+  color: #f6efe2;
 }
 
-.commande-table tbody td{
+.commande-table tbody td {
   padding: 16px 18px;
   font-weight: 700;
-  color: #2B1D14;
-  border-bottom: 1px solid #F0E6D7;
+  color: #2b1d14;
+  border-bottom: 1px solid #f0e6d7;
 }
 
-.commande-table tbody tr:nth-child(odd){
+.commande-table tbody tr:nth-child(odd) {
   background: #fff9f0;
 }
 
-.commande-table tbody tr:nth-child(even){
-  background:#fcf4e5;
+.commande-table tbody tr:nth-child(even) {
+  background: #fcf4e5;
 }
 
-.commande-table tbody tr:last-child td{
+.commande-table tbody tr:last-child td {
   border-bottom: none;
 }
 
 .commande-table th:nth-child(2),
 .commande-table th:nth-child(3),
 .commande-table td:nth-child(2),
-.commande-table td:nth-child(3){
-  text-align:center;
+.commande-table td:nth-child(3) {
+  text-align: center;
   width: 140px;
 }
 
-.commande-table tbody tr:hover{
-  background: #F8EEDC;
+.commande-table tbody tr:hover {
+  background: #f8eedc;
   transition: background 0.2s ease;
 }
 
-.commande-details{
+.commande-details {
   flex: 0 0 310px;
-  background: linear-gradient(180deg, #F3E8D6 0%. #EADBC4 100%);
+  background: linear-gradient(180deg, #f3e8d6 0%, #eadbc4 100%);
   padding: 28px 26px;
   border-radius: 20px;
-  border: 1px solid #D9C5A8;
-  box-shadow: 0 10px 24px #2B1D14;
+  border: 1px solid #d9c5a8;
+  box-shadow: 0 10px 24px #2b1d14;
   position: sticky;
   top: 20px;
 }
 
-.details-title{
+.details-title {
   font-family: "Baloo 2", system-ui, sans-serif;
   font-size: 34px;
   margin-bottom: 22px;
-  color: #2B1D14;
+  color: #2b1d14;
   line-height: 1;
 }
 
-.details-line{
+.details-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -532,42 +536,44 @@ main{
   margin-bottom: 18px;
   font-size: 18px;
   font-weight: 800;
-  color: #2B1D14;
+  color: #2b1d14;
 }
 
-.details-divider{
+.details-divider {
   height: 1px;
-  background: #8B725B;
+  background: #8b725b;
   opacity: 0.5;
   margin: 10px 0 16px;
 }
 
-.details-total{
+.details-total {
   font-size: 22px;
   font-weight: 900;
   margin-bottom: 26px;
 }
 
-.details-button{
+.details-button {
   display: inline-block;
-  background: #2B1D14;
-  color: #FFF8EE;
+  background: #2b1d14;
+  color: #fff8ee;
   text-decoration: none;
   font-weight: 900;
   padding: 12px 26px;
-  transition: background 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  transition:
+    background 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
 }
 
-.details-button:hover{
-  background: #3B271B;
+.details-button:hover {
+  background: #3b271b;
   transform: translateY(2px);
-  box-shadow: 0 1px 0 #6B3F1F;
-
+  box-shadow: 0 1px 0 #6b3f1f;
 }
 
-.active-commande{
-  background: #D8B35A;
-  box-shadow: 0 1px 0 #6B3F1F;
+.active-commande {
+  background: #d8b35a;
+  box-shadow: 0 1px 0 #6b3f1f;
 }
 
 /* Header / Navigations / Footer 
@@ -578,44 +584,50 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-	background-image: url(/images/tileable-wood-colored.png);
-	background-color: #5A3E2B;
-	background-blend-mode: multiply;
+  background-image: url(/images/tileable-wood-colored.png);
+  background-color: #5a3e2b;
+  background-blend-mode: multiply;
   border-bottom: 2px solid #a37f30;
+}
+
+.logo-img {
+  width: 160px;
+  height: auto;
+  display: block;
 }
 
 nav ul {
   display: flex;
   gap: 20px;
-	list-style: none;
+  list-style: none;
 }
 
-.mobile-menu-btn{
+.mobile-menu-btn {
   display: none;
   background: rgba(255, 248, 238, 0.12);
-  border: 2px solid #E4D3BE;
+  border: 2px solid #e4d3be;
   border-radius: 12px;
   padding: 10px 12px;
   cursor: pointer;
-	background-color:#6B3F1F;
+  background-color: #6b3f1f;
 }
 
 .menu-icon {
-	width: 26px;
+  width: 26px;
   height: 26px;
   display: block;
-	filter: invert(1);
+  filter: invert(1);
 }
 
-.main-footer{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 18px 0;
-	background: #FFF8EE;
-	font-family: "Nunito", Arial, sans-serif;
-	font-weight: 700;
-	color: #2B1D14;
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  background: #fff8ee;
+  font-family: "Nunito", Arial, sans-serif;
+  font-weight: 700;
+  color: #2b1d14;
 }
 
 nav a::after {
@@ -625,7 +637,7 @@ nav a::after {
   bottom: 2px;
   width: 0;
   height: 3px;
-  background: #C89B3C;
+  background: #c89b3c;
   border-radius: 999px;
   transition: width 0.25s ease;
 }
@@ -638,37 +650,40 @@ nav a.active::after {
   width: calc(100% - 24px);
 }
 
-.nav-commande{
-  color: #FFF8EE;
-  border: 2px solid #C89B3C;
+.nav-commande {
+  color: #fff8ee;
+  border: 2px solid #c89b3c;
   padding: 6px 14px;
   border-radius: 8px;
   font-weight: 900;
-  background: rgba(200,155,60,0.12);
-  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+  background: rgba(200, 155, 60, 0.12);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border 0.2s ease;
 }
 
-.nav-commande:hover{
-  background: #C89B3C;
-  color: #2B1D14;
+.nav-commande:hover {
+  background: #c89b3c;
+  color: #2b1d14;
 }
 
-.nav-commande.active{
-  background: #C89B3C;
-  color: #2B1D14;
+.nav-commande.active {
+  background: #c89b3c;
+  color: #2b1d14;
 }
 
 .nav-commande::after {
   display: none;
 }
 
-.footer-inner{
+.footer-inner {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.footer-top{
+.footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -676,77 +691,62 @@ nav a.active::after {
   flex-wrap: wrap;
 }
 
-.footer-madeby{
+.footer-madeby {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 800;
-  color: #2B1D14;
+  color: #2b1d14;
 }
 
-.footer-social{
+.footer-social {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 800;
-  color: #2B1D14;
+  color: #2b1d14;
 }
 
-.footer-social a{
+.footer-social a {
   text-decoration: none;
-  color: #2B1D14;
+  color: #2b1d14;
   padding: 6px 8px;
   border-radius: 10px;
-  border: 1px solid #E4D3BE;
+  border: 1px solid #e4d3be;
 }
 
-.footer-social a:hover{
-  background: #F0E3CF;
+.footer-social a:hover {
+  background: #f0e3cf;
 }
 
-.footer-divider{
+.footer-divider {
   height: 2px;
-  background: #2B1D14;
+  background: #2b1d14;
   opacity: 0.25;
 }
 
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 800;
-  color: #6E5646;
+  color: #6e5646;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-/* Composantes générales (exemples : section, cartes, tableaux, etc.)
-========================================================================== */
-
-
-
-/* Formulaires
-========================================================================== */
-
-
-
-/* Règles spécifiques aux pages
-========================================================================== */
-
-
-
 /*====MEDIA QUERIES=======*/
 
-@media (max-width: 1200px){
-  .accueil-title{ 
-    font-size: 42px; 
+@media (max-width: 1200px) {
+  .accueil-title {
+    font-size: 42px;
   }
 
-  .acceuil-image{ 
-    height: 340px; 
+  .acceuil-image {
+    height: 340px;
   }
 
-  .mosaic{
+  .mosaic {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 180px 220px 220px;
     grid-template-areas:
@@ -755,39 +755,51 @@ nav a.active::after {
       "e f d";
   }
 
-  .tile-a{ grid-area: a; }
-  .tile-b{ grid-area: b; }
-  .tile-c{ grid-area: c; }
-  .tile-d{ grid-area: d; }
-  .tile-e{ grid-area: e; }
-  .tile-f{ grid-area: f; }
+  .tile-a {
+    grid-area: a;
+  }
+  .tile-b {
+    grid-area: b;
+  }
+  .tile-c {
+    grid-area: c;
+  }
+  .tile-d {
+    grid-area: d;
+  }
+  .tile-e {
+    grid-area: e;
+  }
+  .tile-f {
+    grid-area: f;
+  }
 
-  .contact-map{
+  .contact-map {
     gap: 30px;
   }
 
-  .contact-info{
+  .contact-info {
     flex: 0 0 280px;
   }
 
-  .map-box{
+  .map-box {
     flex: 1;
     max-width: 520px;
   }
 
-  .map-box iframe{
+  .map-box iframe {
     min-height: 340px;
   }
 
-  .commande-title{
+  .commande-title {
     font-size: 42px;
   }
-  
-  .commande-layout{
+
+  .commande-layout {
     gap: 35px;
   }
 
-  .commande-details{
+  .commande-details {
     flex: 0 0 290px;
   }
 }
@@ -798,10 +810,10 @@ nav a.active::after {
   }
 
   .mobile-menu-btn {
-	display: none;
+    display: none;
   }
 
-  .mosaic{
+  .mosaic {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 170px 260px 170px;
     grid-template-areas:
@@ -810,78 +822,89 @@ nav a.active::after {
       "c c e f";
   }
 
-  .tile-a{ grid-area: a; }
-  .tile-b{ grid-area: b; }
-  .tile-c{ grid-area: c; }
-  .tile-d{ grid-area: d; }
-  .tile-e{ grid-area: e; }
-  .tile-f{ grid-area: f; }
+  .tile-a {
+    grid-area: a;
+  }
+  .tile-b {
+    grid-area: b;
+  }
+  .tile-c {
+    grid-area: c;
+  }
+  .tile-d {
+    grid-area: d;
+  }
+  .tile-e {
+    grid-area: e;
+  }
+  .tile-f {
+    grid-area: f;
+  }
 
-.contact-map{
+  .contact-map {
     gap: 60px;
     align-items: center;
   }
 
-  .contact-info{
+  .contact-info {
     flex: 0 0 320px;
   }
 
-  .map-box{
+  .map-box {
     flex: 0 0 720px;
   }
 
-  .map-box iframe{
+  .map-box iframe {
     min-height: 360px;
   }
 }
 
-@media (max-width: 960px){
-	
-  nav { 
-		display: none;
-	}
-	
-	.mobile-menu-btn {
-		display: inline-flex;
-		justify-content: center;
-		align-items: center;
-	}
+@media (max-width: 960px) {
+  nav {
+    display: none;
+  }
 
-	.main-footer {
+  .mobile-menu-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-footer {
     padding: 14px 20px;
     font-size: 14px;
   }
 
-  .accueil-haut{
+  .accueil-haut {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .accueil-left{
+  .accueil-left {
     flex: initial;
     width: 100%;
   }
 
-  .accueil-right{
+  .accueil-right {
     width: 100%;
     justify-content: flex-start;
   }
 
-  .accueil-image{
+  .accueil-image {
     max-width: 100%;
     width: 100%;
     height: 320px;
   }
 
-  .testimonial-card{
+  .testimonial-card {
     flex: 1 1 calc(50% - 9px); /*J'ai lu beaucoup sur les meilleures pratiques en terme de placement de grids et lu sur la fonction calc. J'ai donc utilisé la notion que je suis aller chercher pour créer la règle de responsiveness que je trouvais intéressante*/
   }
 
-  .restaurant-title{
+  .restaurant-title {
     font-size: 36px;
   }
 
-  .mosaic{
+  .mosaic {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 180px 180px 260px 180px;
     grid-template-areas:
@@ -891,69 +914,68 @@ nav a.active::after {
       "e f";
   }
 
-  .contact-map{
+  .contact-map {
     flex-direction: column;
   }
 
-  .contact-info{
+  .contact-info {
     flex: initial;
     width: 100%;
   }
 
-  .map-box{
+  .map-box {
     width: 100%;
     max-width: 100%;
   }
 
-  .map-box iframe{
+  .map-box iframe {
     min-height: 280px;
   }
 
-  .contact-map{
+  .contact-map {
     flex-direction: column;
     gap: 20px;
   }
 
-  .contact-info{
+  .contact-info {
     width: 100%;
   }
 
-  .map-box{
+  .map-box {
     width: 100%;
     max-width: 100%;
   }
 
-  .map-box iframe{
+  .map-box iframe {
     min-height: 280px;
   }
 
-  .commande-layout{
+  .commande-layout {
     flex-direction: column;
   }
 
   .commande-menu,
-  .commande-details{
+  .commande-details {
     width: 100%;
   }
 
-  .commande-details{
+  .commande-details {
     flex: initial;
     max-width: none;
     position: static;
   }
 }
 
-
-@media (max-width: 570px){
-  .map-box iframe{
+@media (max-width: 570px) {
+  .map-box iframe {
     min-height: 240px;
   }
 
-  .restaurant-title{
+  .restaurant-title {
     font-size: 32px;
   }
 
-  .mosaic{
+  .mosaic {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 160px 160px 220px 160px 160px;
     grid-template-areas:
@@ -965,17 +987,17 @@ nav a.active::after {
       "f";
   }
 
-  .commande-title{
+  .commande-title {
     font-size: 36px;
     margin-bottom: 30px;
   }
 
-  .commande-section-title{
+  .commande-section-title {
     font-size: 25px;
   }
 
   .commande-table thead th,
-  .commande-table tbody td{
+  .commande-table tbody td {
     padding: 13px 12px;
     font-size: 14px;
   }
@@ -983,15 +1005,15 @@ nav a.active::after {
   .commande-table th:nth-child(2),
   .commande-table th:nth-child(3),
   .commande-table td:nth-child(2),
-  .commande-table td:nth-child(3){
+  .commande-table td:nth-child(3) {
     width: auto;
   }
 
-  .details-title{
+  .details-title {
     font-size: 28px;
   }
 
-  .details-line{
+  .details-line {
     font-size: 16px;
   }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -6,180 +6,186 @@
     <title>TP3: LAROCHELLE Shawn</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <header>
     <div class="logo">
-        <img src="" alt="Pookie's">
+      <img src="images/POOKIE'S 2.jpg" alt="Logo Pookie's" class="logo-img" />
     </div>
 
-  <nav>
-    <ul class="nav-list">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="P1-Réservation.html">Réservation</a></li>
-      <li><a href="P2-Restaurant.html">Restaurant</a></li>
-      <li><a href="P3-Ma Commande.html" class="nav-commande active">Ma Commande</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="P1-Réservation.html">Réservation</a></li>
+        <li><a href="P2-Restaurant.html">Restaurant</a></li>
+        <li>
+          <a href="P3-Ma Commande.html" class="nav-commande active"
+            >Ma Commande</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <button class="mobile-menu-btn" type="button">
-    <img src="images/menu.png" alt="menu" class="menu-icon">
-  </button>
-</header>
+    <button class="mobile-menu-btn" type="button">
+      <img src="images/menu.png" alt="menu" class="menu-icon" />
+    </button>
+  </header>
 
-<body>
-  <main>
-    <div class="container">
-      <section class="commande-page">
-        <h2 class="commande-title">Ma commande</h2>
+  <body>
+    <main>
+      <div class="container">
+        <section class="commande-page">
+          <h2 class="commande-title">Ma commande</h2>
 
-        <div class="commande-layout">
-          <div class="commande-menu">
+          <div class="commande-layout">
+            <div class="commande-menu">
+              <section class="commande-section">
+                <h3 class="commande-section-title">Entrées</h3>
 
-  <section class="commande-section">
-    <h3 class="commande-section-title">Entrées</h3>
+                <table class="commande-table">
+                  <thead>
+                    <tr>
+                      <th>Nom du plat</th>
+                      <th>Prix</th>
+                      <th>Quantité</th>
+                    </tr>
+                  </thead>
 
-    <table class="commande-table">
-      <thead>
-        <tr>
-          <th>Nom du plat</th>
-          <th>Prix</th>
-          <th>Quantité</th>
-        </tr>
-      </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bouchées Ursines</td>
+                      <td>5,99 $</td>
+                      <td>1</td>
+                    </tr>
 
-      <tbody>
-        <tr>
-          <td>Bouchées Ursines</td>
-          <td>5,99 $</td>
-          <td>1</td>
-        </tr>
+                    <tr>
+                      <td>Bretzel du Terrier</td>
+                      <td>7,49 $</td>
+                      <td>1</td>
+                    </tr>
 
-        <tr>
-          <td>Bretzel du Terrier</td>
-          <td>7,49 $</td>
-          <td>1</td>
-        </tr>
+                    <tr>
+                      <td>Croquettes de la Forêt</td>
+                      <td>8,99 $</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
 
-        <tr>
-          <td>Croquettes de la Forêt</td>
-          <td>8,99 $</td>
-          <td>2</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+              <section class="commande-section">
+                <h3 class="commande-section-title">Plats principaux</h3>
 
-  <section class="commande-section">
-    <h3 class="commande-section-title">Plats principaux</h3>
+                <table class="commande-table">
+                  <thead>
+                    <tr>
+                      <th>Nom du plat</th>
+                      <th>Prix</th>
+                      <th>Quantité</th>
+                    </tr>
+                  </thead>
 
-    <table class="commande-table">
-      <thead>
-        <tr>
-          <th>Nom du plat</th>
-          <th>Prix</th>
-          <th>Quantité</th>
-        </tr>
-      </thead>
+                  <tbody>
+                    <tr>
+                      <td>Burger du Grand Ours</td>
+                      <td>16,99 $</td>
+                      <td>1</td>
+                    </tr>
 
-      <tbody>
-        <tr>
-          <td>Burger du Grand Ours</td>
-          <td>16,99 $</td>
-          <td>1</td>
-        </tr>
+                    <tr>
+                      <td>Poutine des Montagnes</td>
+                      <td>14,99 $</td>
+                      <td>1</td>
+                    </tr>
 
-        <tr>
-          <td>Poutine des Montagnes</td>
-          <td>14,99 $</td>
-          <td>1</td>
-        </tr>
+                    <tr>
+                      <td>Macaroni du Chalet</td>
+                      <td>18,49 $</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
 
-        <tr>
-          <td>Macaroni du Chalet</td>
-          <td>18,49 $</td>
-          <td>2</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+              <section class="commande-section">
+                <h3 class="commande-section-title">Autre</h3>
 
-  <section class="commande-section">
-    <h3 class="commande-section-title">Autre</h3>
+                <table class="commande-table">
+                  <thead>
+                    <tr>
+                      <th>Nom du plat</th>
+                      <th>Prix</th>
+                      <th>Quantité</th>
+                    </tr>
+                  </thead>
 
-    <table class="commande-table">
-      <thead>
-        <tr>
-          <th>Nom du plat</th>
-          <th>Prix</th>
-          <th>Quantité</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Tarte au Miel de Pookie</td>
-          <td>6,49 $</td>
-          <td>1</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-</div>
-
-          <!-- RIGHT SIDE -->
-          <aside class="commande-details">
-            <h3 class="details-title">Détails</h3>
-
-            <div class="details-line">
-              <span>Sous-total :</span>
-              <span>89,92 $</span>
+                  <tbody>
+                    <tr>
+                      <td>Tarte au Miel de Pookie</td>
+                      <td>6,49 $</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
             </div>
 
-            <div class="details-line">
-              <span>Taxes :</span>
-              <span>13,47 $</span>
-            </div>
+            <!-- RIGHT SIDE -->
+            <aside class="commande-details">
+              <h3 class="details-title">Détails</h3>
 
-            <div class="details-divider"></div>
+              <div class="details-line">
+                <span>Sous-total :</span>
+                <span>89,92 $</span>
+              </div>
 
-            <div class="details-line details-total">
-              <span>Total :</span>
-              <span>103,39 $</span>
-            </div>
+              <div class="details-line">
+                <span>Taxes :</span>
+                <span>13,47 $</span>
+              </div>
 
-            <a href="#" class="details-button">Commander</a>
-          </aside>
+              <div class="details-divider"></div>
+
+              <div class="details-line details-total">
+                <span>Total :</span>
+                <span>103,39 $</span>
+              </div>
+
+              <a href="#" class="details-button">Commander</a>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container footer-inner">
+        <div class="footer-top">
+          <div class="footer-madeby">
+            <span class="footer-mail">✉️</span>
+            <span>Réalisé par : Shawn Larochelle</span>
+          </div>
+
+          <div class="footer-social">
+            <span>Réseaux sociaux :</span>
+            <a href="#" alt="Facebook">ⓕ</a>
+            <a href="#" alt="LinkedIn">in</a>
+            <a href="#" alt="Twitter">𝕏</a>
+            <a href="#" alt="Instagram">◎</a>
+          </div>
         </div>
-      </section>
-    </div>  
-  </main>
-  <footer class="main-footer">
-  <div class="container footer-inner">
-    <div class="footer-top">
-      <div class="footer-madeby">
-        <span class="footer-mail">✉️</span>
-        <span>Réalisé par : Shawn Larochelle</span>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div>Intégration web 1</div>
+          <div>Cégep de Trois-Rivières (Hiver 2026)</div>
+        </div>
       </div>
-
-      <div class="footer-social">
-        <span>Réseaux sociaux :</span>
-        <a href="#" alt="Facebook">ⓕ</a>
-        <a href="#" alt="LinkedIn">in</a>
-        <a href="#" alt="Twitter">𝕏</a>
-        <a href="#" alt="Instagram">◎</a>
-      </div>
-    </div>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-bottom">
-      <div>Intégration web 1</div>
-      <div>Cégep de Trois-Rivières (Hiver 2026)</div>
-    </div>
-  </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
